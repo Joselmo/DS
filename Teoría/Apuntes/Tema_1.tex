@@ -11,8 +11,8 @@
 \hypersetup{
   colorlinks   = true, %Colours links instead of ugly boxes
   urlcolor     = blue, %Colour for external hyperlinks
-  linkcolor    = black, %Colour of internal links
-  citecolor   = blue %Colour of citations
+  linkcolor    = blue, %Colour of internal links
+  citecolor   = blue, %Colour of citations
 }
 \usepackage{url} % ,href} %para incluir URLs e hipervínculos dentro del texto (aunque hay que instalar href)
 
@@ -75,7 +75,6 @@ En la segunda y tercera fila se indican los atributos y métodos respectivamente
 \item \textbf{tipo retorno} : indica el tipo de objeto que devuelve.
 
 \end{enumerate}
-
 En la cuarta fila se hace una breve descripción de la responsabilidad de dicho objeto.
 Principalmente se utilizan los tipos de clases: Normal, Abstracta e Interfaz.\\
 
@@ -222,12 +221,42 @@ Según nos define [Bruegge and Dutoit, 2004] hay unos tareas a la hora de diseñ
 \item Independientemente del nivel de abstracción, compararlo con otras soluciones pre-existentes.
 \end{itemize}
 
-\subsection{Abstracción-Caso}
+\subsection{Abstracción-Caso}\label{Abstraccion_caso}
+Se encuentra en diagramas de clases que forman parte de un modelo de dominio del sistema. Se aplica a conjuntos de objetos relacionados: ``casos''. \\
 
+\textbf{Contexto:} Tenemos un conjunto de objetos relacionados entre sí. Los miembros de tal conjunto comparte información común pero también difieren entre sí de maneras importantes. Es una clasificación Taxonómica.\\
 
+\textbf{Problema:} ¿Cuál es la mejor manera de representar estos conjuntos de ocurrencias en un diagrama de clases?\\
 
+\textbf{Fuerzas:} Desea representar a los miembros de cada conjunto de ocurrencias sin duplicar la información común.\\
 
+\textbf{Solución:} De forma genérica sería:
+\begin{figure}[H] %con el [H] le obligamos a situar aquí la figura
+\centering
+\includegraphics[scale=0.8]{img/abstraccion_caso.png}
+\end{figure}
 
+De una forma más específica se tomaría como una clase que contiene toda la información común que contiene una referencia al una clase que contiene la información distinta.
+
+\begin{figure}[H] %con el [H] le obligamos a situar aquí la figura
+\centering
+\includegraphics[scale=0.4]{img/abstraccion_caso_2.png}
+\caption{Ejemplo de una solución del patrón Abstracción-Caso.}
+\end{figure}
+
+\textbf{Anti-Patrones:} por ejemplo siguiendo con el tema de un libro y ejemplares estas soluciones serían anti-patrones, ya que en todos los caso se duplica información o se contiene referencias innecesarias:
+\begin{figure}[H] %con el [H] le obligamos a situar aquí la figura
+\centering
+\includegraphics[scale=0.4]{img/abstraccion_caso_3.png}
+\caption{Ejemplo de anti-patrones del patrón Abstracción-Caso.}
+\end{figure}
+
+\textbf{Patrones relacionados:} \nameref{Flyweight} y Prototype.
+
+\subsection{Flyweight}\label{Flyweight}
+Genera un gran número de objetos de baja granularidad, almacenarlos todos sin compartir estado dando lugar a mucha replicación de datos y tiene encapsulación de estados no esenciales.\\
+
+\textbf{Contexto:}
 
 
 \end{document}
