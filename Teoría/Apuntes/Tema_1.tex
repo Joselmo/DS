@@ -178,6 +178,54 @@ La realización es una relación que indica que la clase va a realizar una imple
 \end{figure}
 
 
+\section{Patrones}
+Un componente software tiene que ser una parte funcional del software, siempre tiene que utilizarse de la misma forma. Los marcos (\textit{Framework}) contiene uno o múltiples componentes software adaptados para resolver un problema muy concreto. Un framework es una infraestructura mínima que provee un esqueleto genérico para un conjunto de abstracciones software con un mismo contexto. Las diferencias de un framework y un patrón son que el patrón esta a un nivel de abstracción mayor, además el framework es mucho más grande y especializado que un patrón. Por ello un framework suele contener varios patrones de diseño, pero al revés no tiene ningún sentido.\\
+
+Un patrón permite capturar el conocimiento más importante acerca del diseño de la solución a un problema, que permite su posterior reutilización.\\
+
+En general los patrones se clasifican en tres apartados:
+\begin{itemize}
+\item \textit{Creacionales}: instanciación de objetos reforzando la restricciones en el tipo y número.
+\item \textit{Estructurales}: organización en la  integración de clases de objetos.
+\item \textit{Comportamentales}: asignación de responsabilidades y comunicación entre  los objetos.
+\end{itemize}
+
+Según Christopher Alexander, ``Cada patrón describe un problema que ocurre una y otra vez en nuestro entorno, así como la solución a ese problema, de tal modo que se pueda aplicar esta solución un millón de veces, sin hacer lo mismo dos veces''. Los patrones tienen cuatro elementos principales:
+\begin{enumerate}
+\item Un \textit{nombre} significativo en una o dos palabras.
+\item El \textit{problema}, que describe cuándo aplicar dicho patrón explica el contexto y el problema en sí. 
+\item Generan una \textit{solución} a modo de plantilla que puede aplicarse al problema para resolverlo.
+\item Las \textit{consecuencias} de aplicar dicho patrón, ya que generan ventajas e inconvenientes. Valores a tener en cuenta a la hora de elegir el patrón.
+\end{enumerate}
+
+Los patrones pueden ser de tres tipos: Patrones de Diseño Orientado a Objetos, Patrones arquitectónicos y patrones de Datos. Nosotros nos centramos en los primeros, los Patrones de Diseño Orientado a Objetos. Para estos patrones hay que determinar una serie de atributos:
+\begin{itemize}
+\item \textbf{Granularidad}, una granulalidad alta permite un patrón muy funcional pero tiene un un rendimiento muy bajo. En cambio una granularidad baja tiene menos funcionalidad pero consigue un mayor rendimiento.
+\item \textbf{Interfaz}, los patrones ayudan a definir una interfaz indicando que  elementos clave y los tipos de los datos debe contener y cuales no, aplicando una serie de restricciones.
+\item \textbf{Jerarquía}, también nos ayuda en la elección de a jerarquía de clases y relaciones, indicando cuando es mejor una clase por \textit{abstracción} o  \textit{interfaz}. 
+\end{itemize} 
+
+La descripción de un patrón contiene los siguientes apartados, aunque no son todos ellos obligatorios siempre que se recoja los cuatro elementos que describimos anteriormente.\\
+\begin{figure}[H] %con el [H] le obligamos a situar aquí la figura
+\centering
+\includegraphics[scale=0.8]{img/elementos_patron.png}
+\end{figure}
+
+Según nos define [Bruegge and Dutoit, 2004] hay unos tareas a la hora de diseñar software:
+\begin{itemize}
+\item Desarrollar una jerarquía de entidades de análisis del problema.
+\item Determinar existencia de un lenguaje de patrones aplicable.
+\item Determinar los patrones arquitectónicos candidatos.
+\item Utilizar la colaboración entre patrones de más bajo nivel.
+\item Determinación de patrones de diseño candidatos.
+\item Buscar los patrones de diseño adecuados.
+\item Independientemente del nivel de abstracción, compararlo con otras soluciones pre-existentes.
+\end{itemize}
+
+\subsection{Abstracción-Caso}
+
+
+
 
 
 
