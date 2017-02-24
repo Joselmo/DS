@@ -1,0 +1,25 @@
+package Bicicleta;
+
+import java.util.Random;
+
+/**
+ * 
+ */
+
+/**
+ * @author Jose-laptop
+ *
+ */
+public abstract class Bicicleta extends Thread{
+	
+	protected int tiempo_minimo;
+	
+	@Override
+	public void run(){
+		Random r = new Random();
+		int time = r.nextInt(60-tiempo_minimo)+ tiempo_minimo; // Obtiene un ramdon entre 10 y 60
+		
+		
+	}
+
+}

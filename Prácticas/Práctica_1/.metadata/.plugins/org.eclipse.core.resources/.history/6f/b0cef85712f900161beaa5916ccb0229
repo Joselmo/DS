@@ -1,0 +1,24 @@
+package Factoria;
+import Bicicleta.Bicicleta;
+import Principal;
+
+/**
+ * 
+ */
+
+/**
+ * @author Jose-laptop
+ *
+ */
+public interface FactoriaCarrera {
+
+	
+	public Bicicleta crearCarrera(TC tipo);
+	
+	public TC getTipo();
+	
+	public void setTipo();	
+	
+	public String toString();
+
+}

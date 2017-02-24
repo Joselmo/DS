@@ -1,0 +1,13 @@
+/**
+ * 
+ */
+
+/**
+ * @author Jose-laptop
+ *
+ */
+public interface FactoriaCarrera {
+	
+	public crearCarrera(TC tipo);
+
+}

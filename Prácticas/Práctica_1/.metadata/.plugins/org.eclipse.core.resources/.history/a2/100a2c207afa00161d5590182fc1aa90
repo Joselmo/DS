@@ -1,0 +1,14 @@
+/**
+ * 
+ */
+package observable;
+
+/**
+ * @author Jose-laptop
+ *
+ */
+public class Tiempo extends MeteoSimulador implements Runnable {
+	
+	
+
+}

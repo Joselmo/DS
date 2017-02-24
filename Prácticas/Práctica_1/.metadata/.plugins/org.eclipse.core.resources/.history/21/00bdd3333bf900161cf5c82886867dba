@@ -1,0 +1,16 @@
+package Bicicleta;
+
+/**
+ * @author Jose-laptop
+ *
+ */
+public class Montaña extends Bicicleta {
+
+	public Montaña(String name,int participante ) {
+		super(name);
+		// TODO Auto-generated constructor stub
+		this.participante = participante;
+		tiempo_minimo = 20;
+	}
+
+}

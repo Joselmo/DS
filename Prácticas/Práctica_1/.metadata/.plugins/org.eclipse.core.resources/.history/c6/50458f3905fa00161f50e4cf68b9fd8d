@@ -1,0 +1,45 @@
+package observable;
+
+import java.util.ArrayList;
+import java.util.Random;
+import java.util.concurrent.ArrayBlockingQueue;
+
+/**
+ * Simulador de Temperatura que genera un valor de temperatura cada 60 segundos
+ * 
+ * @author Jose-laptop
+ *
+ */
+public class Temperatura extends MeteoSimulador implements Runnable {
+	
+	ArrayList<Integer> temperaturas;
+	
+	public Temperatura(){
+		temperaturas = new ArrayList<Integer>();
+		
+		
+	}
+
+	@Override
+	public void run() {
+		// TODO Auto-generated method stub
+		Random r= new Random(t2);
+
+		int temperatura;
+
+		while (true){
+
+		  temperatura= r.nextInt();
+
+		  try {
+			  Thread.sleep(60);
+		  }catch(java.lang.InterruptedException e){
+			  e.printStackTrace();
+		  }
+
+		  observablePantalla.notificarObservador();
+
+		}
+	}
+
+}

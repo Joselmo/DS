@@ -1,0 +1,12 @@
+/**
+ * 
+ */
+package Observador;
+
+/**
+ * @author Jose-laptop
+ *
+ */
+public interface Observador {
+
+}

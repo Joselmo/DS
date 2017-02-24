@@ -1,0 +1,17 @@
+package Bicicleta;
+/**
+ * 
+ */
+
+/**
+ * @author Jose-laptop
+ *
+ */
+public abstract class Bicicleta extends Thread{
+	
+	@Override
+	public void run(){
+		
+	}
+
+}

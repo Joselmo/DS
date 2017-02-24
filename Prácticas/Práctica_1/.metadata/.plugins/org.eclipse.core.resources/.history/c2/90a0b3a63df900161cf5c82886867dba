@@ -1,0 +1,8 @@
+package Bicicleta;
+
+public class Cuadro {
+	
+	protected String material;
+	protected int peso;
+
+}

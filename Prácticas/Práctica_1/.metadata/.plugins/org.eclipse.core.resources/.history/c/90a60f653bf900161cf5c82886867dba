@@ -1,0 +1,18 @@
+package Bicicleta;
+/**
+ * 
+ */
+
+/**
+ * @author Jose-laptop
+ *
+ */
+public class Carretera extends Bicicleta {
+
+	public Carretera(String name, int participante) {
+		super(name);
+		// TODO Auto-generated constructor stub
+		this.participante = participante;
+	}
+
+}

@@ -1,0 +1,58 @@
+/**
+ * 
+ */
+package observador;
+
+import javax.swing.JLabel;
+
+/**
+ * @author Jose-laptop
+ *
+ */
+public class Pantalla implements Observador {
+	
+	private float temperatura;
+	private boolean celsius;
+	
+
+	public Pantalla(){
+		temperatura = 0;
+		celsius = true;
+	}
+
+	/**
+	 * Recibe una nueva temperatura en Celsius.
+	 */
+	@Override
+	public void manejarEvento(Object valor) {
+		temperatura = (Integer) valor;
+		celsius = true;
+		System.out.println("Temperatura actual= "+temperatura+ "º");
+		
+		toFahrenheit();
+		System.out.println("Temperatura actual= "+temperatura+ "Fº");
+
+	}
+	
+	public void toFahrenheit(){
+		if(celsius)
+			temperatura = 32 + ( temperatura * 9 / 5);
+		
+		celsius = false;
+	}
+	
+	public void toCelsius(){
+		if(!celsius)
+			temperatura = (temperatura - 32 ) * (5 / 9.0f);
+		
+		celsius = true;
+	}
+
+	public void asignarComponente(JLabel jl_temperatura) {
+		jl_temperatura.setText(temperatura+"");
+		
+	}
+	
+	
+
+}

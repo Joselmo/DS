@@ -1,0 +1,12 @@
+/**
+ * 
+ */
+package Observable;
+
+/**
+ * @author Jose-laptop
+ *
+ */
+public abstract class MeteoSimulador {
+
+}

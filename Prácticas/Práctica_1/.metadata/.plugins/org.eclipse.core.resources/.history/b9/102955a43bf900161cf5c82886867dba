@@ -1,0 +1,19 @@
+package Bicicleta;
+/**
+ * 
+ */
+
+/**
+ * @author Jose-laptop
+ *
+ */
+public class Carretera extends Bicicleta {
+
+	public Carretera(String name, int participante) {
+		super(name);
+		// TODO Auto-generated constructor stub
+		this.participante = participante;
+		tiempo_minimo = 6; // el 10% de los participantes se retirará de la carrera 
+	}
+
+}

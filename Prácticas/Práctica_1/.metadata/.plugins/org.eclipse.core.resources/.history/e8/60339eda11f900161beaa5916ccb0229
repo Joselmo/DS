@@ -1,0 +1,8 @@
+
+/**
+ * @author Jose-laptop
+ *
+ */
+public class Montaña extends Bicicleta {
+
+}

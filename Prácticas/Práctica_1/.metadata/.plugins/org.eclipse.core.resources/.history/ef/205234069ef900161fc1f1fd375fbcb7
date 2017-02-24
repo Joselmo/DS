@@ -1,0 +1,19 @@
+/**
+ * 
+ */
+package Bicicleta;
+
+/**
+ * @author Jose-laptop
+ *
+ */
+public class ManillarCarretera extends Manillar {
+	
+	private boolean velocimetro;
+	
+	public ManillarCarretera(String tipo, boolean velocimetro){
+		super(tipo);
+		this.velocimetro = velocimetro;
+	}
+
+}

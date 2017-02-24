@@ -1,0 +1,16 @@
+/**
+ * 
+ */
+package Observable;
+
+/**
+ * @author Jose-laptop
+ *
+ */
+public abstract class MeteoSimulador {
+	
+	public MeteoSimulador(){}
+	
+	public void incluirSimiulador(MeteoSimulador * simulador);
+
+}

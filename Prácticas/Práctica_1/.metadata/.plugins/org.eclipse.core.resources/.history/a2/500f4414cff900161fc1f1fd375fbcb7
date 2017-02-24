@@ -1,0 +1,40 @@
+/**
+ * 
+ */
+package Observable;
+
+import java.util.ArrayList;
+import Observador.Observador;
+
+/**
+ * @author Jose-laptop
+ *
+ */
+public abstract class MeteoSimulador {
+	
+	private ArrayList<Observador> ObservadoresConcretos;	
+	
+	public MeteoSimulador(){}
+	
+	public void incluirObservador(Observador observador){
+		ObservadoresConcretos.add(observador);
+	}
+	
+	//quitar observador
+	public void eliminarObservador(Observador observador){
+		ObservadoresConcretos.remove(observador);
+	}
+	
+	/**
+	 * Notifica a los observadores que actualicen sus valores
+	 */
+	public void notificar(){
+		
+	}
+	
+	public void definirObservador(){
+		
+		
+	}
+
+}

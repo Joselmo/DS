@@ -1,0 +1,8 @@
+package Bicicleta;
+
+public class Rueda {
+	
+	private int tamanio;
+	private String material;
+
+}

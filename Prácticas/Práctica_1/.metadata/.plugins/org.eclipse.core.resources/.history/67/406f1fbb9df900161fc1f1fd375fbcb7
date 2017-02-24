@@ -1,0 +1,12 @@
+package Bicicleta;
+
+public class ManillarMontaña extends Manillar {
+	
+	private boolean gps;
+
+	public ManillarMontaña(String tipo) {
+		super(tipo);
+		// TODO Auto-generated constructor stub
+	}
+
+}

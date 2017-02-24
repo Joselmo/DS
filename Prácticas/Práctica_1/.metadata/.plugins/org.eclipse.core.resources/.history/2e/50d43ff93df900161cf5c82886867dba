@@ -1,0 +1,19 @@
+/**
+ * 
+ */
+package Bicicleta;
+
+/**
+ * @author Jose-laptop
+ *
+ */
+public class CuadroCarretera extends Cuadro {
+	
+	private int bidones;
+
+	public CuadroCarretera(String material, int peso) {
+		super(material, peso);
+		// TODO Auto-generated constructor stub
+	}
+
+}

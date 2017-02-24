@@ -1,0 +1,22 @@
+/**
+ * 
+ */
+package Observable;
+
+import java.util.ArrayList;
+
+/**
+ * @author Jose-laptop
+ *
+ */
+public abstract class MeteoSimulador {
+	
+	private ArrayList<MeteoSimulador> simuladoresConcretos;	
+	
+	public MeteoSimulador(){}
+	
+	public void incluirSimiulador(MeteoSimulador simulador){
+		simuladoresConcretos.add(simulador);
+	}	
+
+}

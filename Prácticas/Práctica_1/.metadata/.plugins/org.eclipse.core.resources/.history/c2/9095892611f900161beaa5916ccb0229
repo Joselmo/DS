@@ -1,0 +1,21 @@
+/**
+ * 
+ */
+
+/**
+ * @author Jose-laptop
+ *
+ */
+public interface FactoriaCarrera {
+	
+	private TC tipo;
+	
+	public Bicicleta crearCarrera(TC tipo);
+	
+	public TC getTipo();
+	
+	public void setTipo();	
+	
+	public String toString();
+
+}

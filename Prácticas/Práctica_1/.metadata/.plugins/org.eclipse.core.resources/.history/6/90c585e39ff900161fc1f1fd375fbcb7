@@ -1,0 +1,56 @@
+package Factoria;
+import java.util.ArrayList;
+
+import Bicicleta.Bicicleta;
+import Bicicleta.Carretera;
+
+/**
+ * 
+ */
+
+/**
+ * @author Jose-laptop
+ *
+ */
+public class FactoriaCarretera implements FactoriaCarrera {
+	
+	private TC tipo;
+	
+	public FactoriaCarretera(){
+		
+	}
+	
+	/**
+	 * Crea un listado de las bicicletas de carretera que participan en la carrera
+	 */
+	public ArrayList<Bicicleta> crearCarrera(TC tipo) {
+		ArrayList<Carretera> listado_bicicletas = new ArrayList<Carretera>();	
+		
+		String nombre;
+		int participante = 0;
+		Carretera bici_carretera = new Carretera("",0);
+		
+		
+		
+		return null;		
+	}
+
+	@Override
+	public TC getTipo() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void setTipo() {
+		// TODO Auto-generated method stub
+		
+	}
+	
+	@Override
+	public String toString(){
+		return "bicicleta -"+tipo;
+	}
+	
+
+}

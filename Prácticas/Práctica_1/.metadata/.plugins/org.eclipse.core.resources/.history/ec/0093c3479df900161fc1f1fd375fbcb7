@@ -1,0 +1,14 @@
+package Bicicleta;
+/**
+ * 
+ */
+
+/**
+ * @author Jose-laptop
+ *
+ */
+public class Manillar {
+	
+	protected String tipo;
+
+}

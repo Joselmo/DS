@@ -1,0 +1,16 @@
+/**
+ * 
+ */
+package Bicicleta;
+
+/**
+ * @author Jose-laptop
+ *
+ */
+public class ManillarCarretera extends Manillar {
+	
+	public ManillarCarretera(String tipo){
+		super(tipo);
+	})
+
+}

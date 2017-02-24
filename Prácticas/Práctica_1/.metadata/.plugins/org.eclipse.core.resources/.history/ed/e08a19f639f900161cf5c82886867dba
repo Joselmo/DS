@@ -1,0 +1,21 @@
+package Bicicleta;
+
+import java.util.Random;
+
+/**
+ * 
+ */
+
+/**
+ * @author Jose-laptop
+ *
+ */
+public abstract class Bicicleta extends Thread{
+	
+	@Override
+	public void run(){
+		Random r = new Random();
+		int time = r.nextInt(60-1)+ 1;
+	}
+
+}

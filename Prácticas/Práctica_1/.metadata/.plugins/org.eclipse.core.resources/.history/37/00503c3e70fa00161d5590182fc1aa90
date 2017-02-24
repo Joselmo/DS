@@ -1,0 +1,65 @@
+/**
+ * 
+ */
+package observador;
+
+import javax.swing.JLabel;
+import GUI.GUI;
+
+/**
+ * @author Jose-laptop
+ *
+ */
+public class Pantalla implements Observador {
+	
+	private float temperatura;
+	private boolean celsius;
+	
+	private javax.swing.JLabel label_temperatura;
+	
+
+	public Pantalla(){
+		temperatura = 0;
+		celsius = true;
+	}
+
+	/**
+	 * Recibe una nueva temperatura en Celsius.
+	 */
+	@Override
+	public void manejarEvento(Object valor) {
+		temperatura = (Integer) valor;
+		if(!celsius){
+			toFahrenheit();
+		}
+
+		//System.out.println("Temperatura actual= "+temperatura+ "º");
+		GUI.getInstance().actualizarTemperatura(temperatura);
+		//toFahrenheit();
+		//System.out.println("Temperatura actual= "+temperatura+ "Fº");
+
+	}
+	
+	
+	public void toFahrenheit(){
+		if(celsius){
+			temperatura = 32 + ( temperatura * 9 / 5);
+			GUI.getInstance().actualizarTemperatura(temperatura);
+		}
+		
+		celsius = false;
+	}
+	
+	public void toCelsius(){
+		if(!celsius){
+			temperatura = (temperatura - 32 ) * (5 / 9.0f);
+			GUI.getInstance().actualizarTemperatura(temperatura);
+		}
+		
+		celsius = true;
+	}
+
+
+	
+
+}

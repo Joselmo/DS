@@ -1,0 +1,12 @@
+package Bicicleta;
+/**
+ * 
+ */
+
+/**
+ * @author Jose-laptop
+ *
+ */
+public class Carretera extends Bicicleta {
+
+}
