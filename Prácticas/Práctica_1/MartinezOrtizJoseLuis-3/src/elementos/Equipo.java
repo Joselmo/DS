@@ -17,17 +17,17 @@ public abstract class Equipo {
 	protected double precio;
 	protected ArrayList<String> spec;
 	
-	protected float NORMAL;
-	protected float VIP;
-	protected float MAYORISTA;
+	protected float normal;
+	protected float vip;
+	protected float mayorista;
 
 	  public Equipo(String nombre){
 		spec = new ArrayList<String>();
 	    this.nombre = nombre; 
 	    
-	    NORMAL = 0;
-	    VIP = 0;
-	    MAYORISTA = 0;
+	    normal = 0;
+	    vip = 0;
+	    mayorista = 0;
 	  }
 
 	  public String nombre(){
@@ -45,11 +45,15 @@ public abstract class Equipo {
 	  public double precioConDescuento(TipoClientes tipo){
 		  double precio_final = precio;
 			switch(tipo){
-				case NORMAL: precio_final -= (precio*NORMAL);break;
-				case VIP: precio_final -= (precio*VIP);break;
-				case MAYORISTA: precio_final -= (precio*MAYORISTA);break;
+				case NORMAL: precio_final -= (precio*normal);break;
+				case VIP: precio_final -= (precio*vip);break;
+				case MAYORISTA: precio_final -= (precio*mayorista);break;
 				
 			}
+			// Ajusta el redondeo
+			if( (precio_final - (int)precio_final) > 0.99)
+				precio_final = (int) precio_final +1;
+			
 			return precio_final;
 	  }
 

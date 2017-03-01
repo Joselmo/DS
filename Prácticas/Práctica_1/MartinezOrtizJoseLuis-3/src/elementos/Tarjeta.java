@@ -14,9 +14,9 @@ public class Tarjeta extends Equipo {
 		this.precio = precio;
 		
 		// DESCUENTOS
-		NORMAL = 0.05f;
-		VIP = 0.1f;
-		MAYORISTA = 0.15f;
+		normal = 0.05f;
+		vip = 0.1f;
+		mayorista = 0.15f;
 		
 		spec.add("Nombre :"+nombre);
 		spec.add("Tipo :"+tipo);

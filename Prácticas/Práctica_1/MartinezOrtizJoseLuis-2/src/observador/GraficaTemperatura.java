@@ -38,7 +38,6 @@ public class GraficaTemperatura implements Observador {
 		refrescarPantalla();
 		//System.out.println("Temperatura actual= "+temperatura+ "º");
 		
-		//toFahrenheit();
 		//System.out.println("Temperatura actual= "+temperatura+ "Fº");
 
 	}

@@ -27,9 +27,9 @@ public class Disco extends Equipo {
 		this.precio = precio;
 		
 		// DESCUENTOS
-		NORMAL = 0.05f;
-		VIP = 0.1f;
-		MAYORISTA = 0.15f;
+		normal = 0.05f;
+		vip = 0.1f;
+		mayorista = 0.15f;
 		
 		spec.add("Nombre :"+nombre);
 		spec.add("Tipo :"+tipo);
@@ -55,14 +55,18 @@ public class Disco extends Equipo {
 	}
 
 
-	/* (non-Javadoc)
-	 * @see elementos.Equipo#aceptar(visitantes.VisitanteEquipo)
+	/**
+	 * 
 	 */
 	@Override
 	public void aceptar(VisitanteEquipo ve) {
 		// TODO Auto-generated method stub
 		ve.VisitarDisco(this);
-
+	}
+	
+	
+	public void aceptar(VisitanteEquipo ve, TipoClientes tipo){
+		ve.VisitarDiscoDesc(this,tipo);
 	}
 
 	@Override

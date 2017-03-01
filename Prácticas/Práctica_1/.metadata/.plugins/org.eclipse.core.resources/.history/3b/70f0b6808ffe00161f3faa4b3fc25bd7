@@ -1,0 +1,39 @@
+package visitantes;
+
+import elementos.Bus;
+import elementos.Disco;
+import elementos.Tarjeta;
+import elementos.TipoClientes;
+
+public class VisitanteEspecificaciones extends VisitanteEquipo {
+	
+	private ArrayList<String> especificiaciones;
+	
+	public public VisitanteEspecificaciones() {
+		// TODO Auto-generated constructor stub
+	}
+
+	@Override
+	public void VisitarDisco(Disco d) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void VisitarTarjeta(Tarjeta t) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void VisitarBus(Bus b) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void VisitarDiscoDesc(Disco d, TipoClientes cliente) {
+		// Nada		
+	}
+
+}

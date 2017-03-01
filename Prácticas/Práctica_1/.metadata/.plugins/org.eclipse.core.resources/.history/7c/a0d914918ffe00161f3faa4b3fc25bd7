@@ -1,0 +1,40 @@
+package visitantes;
+
+import elementos.Bus;
+import elementos.Disco;
+import elementos.Tarjeta;
+import elementos.TipoClientes;
+import java.util.ArrayList;
+
+public class VisitanteEspecificaciones extends VisitanteEquipo {
+	
+	private ArrayList<String> especificiaciones;
+	
+	public VisitanteEspecificaciones() {
+		especificiaciones = new ArrayList<String>;
+	}
+
+	@Override
+	public void VisitarDisco(Disco d) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void VisitarTarjeta(Tarjeta t) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void VisitarBus(Bus b) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void VisitarDiscoDesc(Disco d, TipoClientes cliente) {
+		// Nada		
+	}
+
+}

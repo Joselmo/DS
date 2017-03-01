@@ -1,0 +1,24 @@
+package GUI;
+
+import observable.Simulador;
+import observable.Temperatura;
+
+public class Cliente {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		GUI gui = GUI.getInstance();
+
+		gui.setVisible(true);
+		
+		Temperatura temperatura = new Temperatura(10, 0);
+		
+		temperatura.incluirObservador(pantalla);
+		tiempo.incluirObservador(prevision);
+		Simulador simulador = new Simulador(tiempo, temperatura);
+		
+		simulador.run();
+
+	}
+
+}

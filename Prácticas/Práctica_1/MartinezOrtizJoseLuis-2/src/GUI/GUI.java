@@ -8,6 +8,7 @@ import java.awt.event.WindowEvent;
 
 import javax.swing.JFrame;
 
+import observable.Simulador;
 import observable.Temperatura;
 import observable.Tiempo;
 import observador.GraficaTemperatura;
@@ -23,11 +24,9 @@ public class GUI extends JFrame {
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
-	static GraficaTemperatura pantalla = new GraficaTemperatura();
-	static TiempoSateital prevision = new TiempoSateital();
-	
-	static Temperatura temperatura = new Temperatura(10, 0);
-	static Tiempo tiempo = new Tiempo();
+	private GraficaTemperatura pantalla;
+	private Temperatura temperatura;
+
 
 	private static final GUI instance = new GUI();
 
@@ -66,6 +65,15 @@ public class GUI extends JFrame {
     public static GUI getInstance(){
         return instance;
     } 
+    
+    public void setGraficaTemperatura(GraficaTemperatura graf){
+    	pantalla = graf;
+    }
+    
+    public void setTemperatura(Temperatura temp){
+    	temperatura = temp;
+    }
+    
 	
 	/**
 	 * Métodos de la interfaz Gráfica
@@ -250,23 +258,6 @@ public class GUI extends JFrame {
 		jl_tiempo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/GUI/icon/"+icon+".png"))); 
         jl_tiempo.setText(tiempo);
 		
-	}
-
-	/**
-	 * @param args
-	 */
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		GUI gui = GUI.getInstance();
-
-		gui.setVisible(true);
-
-		temperatura.incluirObservador(pantalla);
-		tiempo.incluirObservador(prevision);
-	
-		temperatura.start();
-		tiempo.start();
-
 	}
 
 }

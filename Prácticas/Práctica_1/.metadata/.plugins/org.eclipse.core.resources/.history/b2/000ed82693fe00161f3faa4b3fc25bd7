@@ -1,0 +1,40 @@
+package observable;
+
+import java.util.ArrayList;
+import java.util.Random;
+
+public class Simulador implements Runnable{
+	
+	
+	
+	public Simulador(Tiempo tiempo, Temperatura temperatura) {
+		Tiempo t = tiempo;
+	}
+
+	@Override
+	public void run() {
+		Random r = new Random();
+		
+
+		String tiempo_actual;
+
+		while (true) {
+			
+			tiempo_actual = tiempo.get(r.nextInt(tiempo.size()));
+			System.out.println("Tiempo-sensor: " + tiempo_actual);
+			try {
+				Thread.sleep(5000);
+			} catch (java.lang.InterruptedException e) {
+				e.printStackTrace();
+			}
+
+			notificarObservador(tiempo_actual);
+
+		}		
+	}
+	
+	
+	
+	
+
+}
