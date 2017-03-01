@@ -1,0 +1,13 @@
+package visitantes;
+
+import elementos.Disco;
+
+public class VisitantePrecio extends VisitanteEquipo {
+
+	@Override
+	public void VisitarDisco(Disco d) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

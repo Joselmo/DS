@@ -1,0 +1,50 @@
+/**
+ * 
+ */
+package elementos;
+
+import visitantes.VisitanteEquipo;
+
+/**
+ * @author Jose-laptop
+ *
+ */
+public class Disco extends Equipo {
+
+	/* (non-Javadoc)
+	 * @see elementos.Equipo#potencia()
+	 */
+	@Override
+	public double potencia() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	/* (non-Javadoc)
+	 * @see elementos.Equipo#precioNeto()
+	 */
+	@Override
+	public double precioNeto() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	/* (non-Javadoc)
+	 * @see elementos.Equipo#precioConDescuento()
+	 */
+	@Override
+	public double precioConDescuento() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	/* (non-Javadoc)
+	 * @see elementos.Equipo#aceptar(visitantes.VisitanteEquipo)
+	 */
+	@Override
+	public void aceptar(VisitanteEquipo ve) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

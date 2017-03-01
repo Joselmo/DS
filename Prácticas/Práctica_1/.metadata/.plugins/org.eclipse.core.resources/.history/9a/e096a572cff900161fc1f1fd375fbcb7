@@ -1,5 +1,0 @@
-package Observable;
-
-public class Temperatura extends MeteoSimulador {
-
-}

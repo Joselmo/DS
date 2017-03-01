@@ -1,0 +1,12 @@
+/**
+ * 
+ */
+package elementos;
+
+/**
+ * @author Jose-laptop
+ *
+ */
+public abstract class Equipo {
+
+}

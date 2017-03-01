@@ -1,0 +1,12 @@
+/**
+ * 
+ */
+package visitantes;
+
+/**
+ * @author Jose-laptop
+ *
+ */
+public abstract class VisitanteEquipo {
+
+}

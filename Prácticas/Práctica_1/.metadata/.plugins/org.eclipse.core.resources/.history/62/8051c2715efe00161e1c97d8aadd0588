@@ -1,0 +1,38 @@
+/**
+ * 
+ */
+package elementos;
+
+import visitantes.VisitanteEquipo;
+
+/**
+ * @author Jose-laptop
+ *
+ */
+public abstract class Equipo {
+	
+	private String nombre;
+	protected double precio;
+
+	  public Equipo(String nombre){
+
+	    this.nombre = nombre; 
+
+	  }
+
+	  public String nombre(){
+
+	    return nombre;
+
+	  }
+
+	  public abstract double potencia();
+
+	  public abstract double precioNeto();
+
+	  public abstract double precioConDescuento(String tipo);
+
+	  public abstract void aceptar(VisitanteEquipo ve);
+
+
+}

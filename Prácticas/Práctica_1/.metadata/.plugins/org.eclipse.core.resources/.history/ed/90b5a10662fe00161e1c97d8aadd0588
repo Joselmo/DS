@@ -1,0 +1,44 @@
+package elementos;
+
+import java.util.ArrayList;
+
+import visitantes.VisitanteEquipo;
+
+public class Tarjeta extends Equipo {
+
+	public Tarjeta(String nombre) {
+		super(nombre);
+		// TODO Auto-generated constructor stub
+	}
+
+	@Override
+	public double potencia() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public double precioNeto() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public ArrayList<String> espeficicaciones() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public double precioConDescuento(TipoClientes tipo) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public void aceptar(VisitanteEquipo ve) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
