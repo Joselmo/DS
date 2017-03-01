@@ -8,7 +8,6 @@ INDEX VERSION 1.129+C:\Users\Jose-laptop\Documents\GitHub\DS\Prácticas\Práctica_
 2911469802.index
 1539866187.index
 30881555.index
-652207124.index
 3314433690.index
 1841280308.index
 91472061.index

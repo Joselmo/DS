@@ -11,26 +11,13 @@ import observador.Observador;
  * @author Jose-laptop
  *
  */
-public abstract class MeteoSimulador implements Runnable{
+public abstract class MeteoSimulador {
 	
 	protected ArrayList<Observador> observadoresConcretos;	
-	private Thread t;
-	protected String threadName;
 	
 	
 	public MeteoSimulador(){
 		observadoresConcretos = new ArrayList<Observador>();
-	}
-	
-	/**
-	 *  Lanza el thread del observable en segundo plano.
-	 */
-	public void start() {
-		System.out.println("Lanzado observable " + threadName);
-		if (t == null) {
-			t = new Thread(this, threadName);
-			t.start();
-		}
 	}
 	
 	/**

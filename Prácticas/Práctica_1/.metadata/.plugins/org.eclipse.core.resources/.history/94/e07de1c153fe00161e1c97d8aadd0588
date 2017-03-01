@@ -12,9 +12,7 @@ public class Temperatura extends MeteoSimulador implements Runnable {
 
 	private int temperatura_maxima, temperatura_minima;
 
-
 	public Temperatura(int temp_max, int temp_min) {
-		threadName = "temperatura";
 		if (temp_max < temp_min)
 			temp_max = temp_min;
 		temperatura_maxima = temp_max;
@@ -44,6 +42,13 @@ public class Temperatura extends MeteoSimulador implements Runnable {
 		}
 	}
 
+	public void start() {
+		System.out.println("Starting " + threadName);
+		if (t == null) {
+			t = new Thread(this, threadName);
+			t.start();
+		}
+	}
 
 	public void setTemperaturaMax(int temp) {
 		temperatura_maxima = temp;

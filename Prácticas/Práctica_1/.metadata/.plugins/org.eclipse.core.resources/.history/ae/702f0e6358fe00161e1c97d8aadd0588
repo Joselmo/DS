@@ -11,7 +11,7 @@ import javax.swing.JFrame;
 import observable.Temperatura;
 import observable.Tiempo;
 import observador.GraficaTemperatura;
-import observador.TiempoSateital;
+import observador.PrevisionTiempo;
 
 /**
  * @author Jose-laptop
@@ -24,7 +24,7 @@ public class GUI extends JFrame {
 	 */
 	private static final long serialVersionUID = 1L;
 	static GraficaTemperatura pantalla = new GraficaTemperatura();
-	static TiempoSateital prevision = new TiempoSateital();
+	static PrevisionTiempo prevision = new PrevisionTiempo();
 	
 	static Temperatura temperatura = new Temperatura(10, 0);
 	static Tiempo tiempo = new Tiempo();

@@ -10,11 +10,11 @@ import java.util.Random;
  * @author Jose-laptop
  *
  */
-public class Tiempo extends MeteoSimulador implements Runnable {
+public class TiempoSateital extends MeteoSimulador implements Runnable {
 	
 	private ArrayList<String> tiempo;	
 	
-	public Tiempo(){
+	public TiempoSateital(){
 		threadName = "tiempo";
 		tiempo = new ArrayList<String>();
 		

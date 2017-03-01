@@ -15,7 +15,6 @@ public class Tiempo extends MeteoSimulador implements Runnable {
 	private ArrayList<String> tiempo;	
 	
 	public Tiempo(){
-		threadName = "tiempo";
 		tiempo = new ArrayList<String>();
 		
 		tiempo.add("Despejado");
@@ -49,8 +48,5 @@ public class Tiempo extends MeteoSimulador implements Runnable {
 		}
 
 	}
-	
-
-
 
 }

@@ -8,12 +8,12 @@ import java.util.Random;
  * @author Jose-laptop
  *
  */
-public class Temperatura extends MeteoSimulador implements Runnable {
+public class GraficaTemperatura extends MeteoSimulador implements Runnable {
 
 	private int temperatura_maxima, temperatura_minima;
 
 
-	public Temperatura(int temp_max, int temp_min) {
+	public GraficaTemperatura(int temp_max, int temp_min) {
 		threadName = "temperatura";
 		if (temp_max < temp_min)
 			temp_max = temp_min;

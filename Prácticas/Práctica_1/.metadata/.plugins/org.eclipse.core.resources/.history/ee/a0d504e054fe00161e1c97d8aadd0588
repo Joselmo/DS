@@ -23,7 +23,7 @@ public abstract class MeteoSimulador implements Runnable{
 	}
 	
 	/**
-	 *  Lanza el thread del observable en segundo plano.
+	 * 
 	 */
 	public void start() {
 		System.out.println("Lanzado observable " + threadName);
