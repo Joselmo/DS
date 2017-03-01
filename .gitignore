@@ -24,7 +24,10 @@
 *.synctex.gz(busy)
 *.pdfsync
 
-## eclipse specific git ignore
+######################
+# Eclipse
+######################
+ 
 *.pydevproject
 .project
 .metadata
@@ -35,7 +38,13 @@ tmp/**/*
 *.bak
 *.swp
 *~.nib
-
+local.properties
+.classpath
+.settings/
+.loadpath
+/src/main/resources/rebel.xml
+# External tool builders
+.externalToolBuilders/
 
 
 
