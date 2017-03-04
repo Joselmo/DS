@@ -4,6 +4,7 @@
 package visitantes;
 
 import elementos.Bus;
+import elementos.Equipo;
 import elementos.Disco;
 import elementos.Tarjeta;
 import elementos.TipoClientes;
@@ -20,7 +21,7 @@ public abstract class VisitanteEquipo {
 
 	public abstract void VisitarBus(Bus b);
 	
-	public abstract void VisitarDiscoDesc(Disco d, TipoClientes cliente);
+	public abstract void VisitarEquipoDesc(Equipo e, TipoClientes cliente);
 	
 
 }

@@ -45,5 +45,9 @@ public class Bus extends Equipo {
 	public void aceptar(VisitanteEquipo ve) {
 		ve.VisitarBus(this);
 	}
+	
+	public void aceptar(VisitanteEquipo ve, TipoClientes tipo){
+		ve.VisitarEquipoDesc(this,tipo);
+	}
 
 }

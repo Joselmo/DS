@@ -47,5 +47,9 @@ public class Tarjeta extends Equipo {
 		ve.VisitarTarjeta(this);
 
 	}
+	
+	public void aceptar(VisitanteEquipo ve, TipoClientes tipo){
+		ve.VisitarEquipoDesc(this,tipo);
+	}
 
 }

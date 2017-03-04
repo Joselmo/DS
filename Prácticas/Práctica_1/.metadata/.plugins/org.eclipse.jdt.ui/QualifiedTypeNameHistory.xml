@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
 <fullyQualifiedTypeName name="FactoriaCarretera"/>
-<fullyQualifiedTypeName name="java.util.Random"/>
 <fullyQualifiedTypeName name="Bicicleta.Bicicleta"/>
 <fullyQualifiedTypeName name="Bicicleta.Carretera"/>
 <fullyQualifiedTypeName name="Bicicleta.CuadroCarretera"/>
@@ -18,15 +17,23 @@
 <fullyQualifiedTypeName name="observador.Pantalla"/>
 <fullyQualifiedTypeName name="GUI.GUI"/>
 <fullyQualifiedTypeName name="java.awt.Dimension"/>
-<fullyQualifiedTypeName name="observable.Temperatura"/>
-<fullyQualifiedTypeName name="observable.Tiempo"/>
 <fullyQualifiedTypeName name="observador.PrevisionTiempo"/>
-<fullyQualifiedTypeName name="visitantes.VisitanteEquipo"/>
-<fullyQualifiedTypeName name="java.util.ArrayList"/>
-<fullyQualifiedTypeName name="elementos.TipoClientes"/>
-<fullyQualifiedTypeName name="visitantes.VisitantePrecio"/>
 <fullyQualifiedTypeName name="elementos.Tarjeta"/>
 <fullyQualifiedTypeName name="elementos.Bus"/>
+<fullyQualifiedTypeName name="java.lang.Runnable"/>
+<fullyQualifiedTypeName name="observable.MeteoSimulador"/>
+<fullyQualifiedTypeName name="observable.Simulador"/>
+<fullyQualifiedTypeName name="observable.Tiempo"/>
+<fullyQualifiedTypeName name="observador.TiempoSateital"/>
+<fullyQualifiedTypeName name="observador.GraficaTemperatura"/>
+<fullyQualifiedTypeName name="observable.Temperatura"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="elementos.TipoClientes"/>
+<fullyQualifiedTypeName name="java.util.Random"/>
+<fullyQualifiedTypeName name="visitantes.VisitanteEquipo"/>
+<fullyQualifiedTypeName name="visitantes.VisitanteEspecificaciones"/>
 <fullyQualifiedTypeName name="elementos.Disco"/>
 <fullyQualifiedTypeName name="elementos.Equipo"/>
+<fullyQualifiedTypeName name="visitantes.VisitantePrecio"/>
+<fullyQualifiedTypeName name="java.text.DecimalFormat"/>
 </qualifiedTypeNameHistroy>

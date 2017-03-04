@@ -58,6 +58,8 @@ public abstract class Equipo {
 	  }
 
 	  public abstract void aceptar(VisitanteEquipo ve);
+	  
+	  public abstract void aceptar(VisitanteEquipo ve, TipoClientes tipo);
 
 
 }

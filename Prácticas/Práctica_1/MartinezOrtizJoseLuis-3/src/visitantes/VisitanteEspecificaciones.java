@@ -2,6 +2,7 @@ package visitantes;
 
 import elementos.Bus;
 import elementos.Disco;
+import elementos.Equipo;
 import elementos.Tarjeta;
 import elementos.TipoClientes;
 import java.util.ArrayList;
@@ -35,10 +36,7 @@ public class VisitanteEspecificaciones extends VisitanteEquipo {
 		especificiaciones.addAll(b.espeficicaciones());
 	}
 
-	@Override
-	public void VisitarDiscoDesc(Disco d, TipoClientes cliente) {
-		// Nada		
-	}
+
 	
 	public void resetEspec(){
 		especificiaciones.clear();
@@ -46,6 +44,12 @@ public class VisitanteEspecificaciones extends VisitanteEquipo {
 	
 	public ArrayList<String> getEspec(){
 		return especificiaciones;
+	}
+
+	@Override
+	public void VisitarEquipoDesc(Equipo e, TipoClientes cliente) {
+		// Nada
+		
 	}
 
 }

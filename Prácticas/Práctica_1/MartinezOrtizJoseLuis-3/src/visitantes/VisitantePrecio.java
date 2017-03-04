@@ -1,6 +1,10 @@
 package visitantes;
 
 import elementos.Disco;
+import elementos.Equipo;
+
+import java.text.DecimalFormat;
+
 import elementos.Bus;
 import elementos.Tarjeta;
 import elementos.TipoClientes;
@@ -31,12 +35,12 @@ public class VisitantePrecio extends VisitanteEquipo {
 		
 	}
 	
-	public void VisitarDiscoDesc(Disco d, TipoClientes cliente){
-		total += d.precioConDescuento(cliente);
+	public void VisitarEquipoDesc(Equipo e, TipoClientes cliente){
+		total += e.precioConDescuento(cliente);
 	}
 	
 	public double getTotal(){
-		return total;
+		return Math.ceil(total);
 	}
 	
 	public void resetPrecio(){

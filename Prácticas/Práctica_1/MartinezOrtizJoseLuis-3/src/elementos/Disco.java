@@ -66,7 +66,7 @@ public class Disco extends Equipo {
 	
 	
 	public void aceptar(VisitanteEquipo ve, TipoClientes tipo){
-		ve.VisitarDiscoDesc(this,tipo);
+		ve.VisitarEquipoDesc(this,tipo);
 	}
 
 	@Override
