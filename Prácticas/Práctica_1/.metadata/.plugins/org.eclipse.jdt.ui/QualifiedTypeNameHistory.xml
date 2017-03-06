@@ -11,12 +11,10 @@
 <fullyQualifiedTypeName name="Observable.MeteoSimulador"/>
 <fullyQualifiedTypeName name="Observador.Observador"/>
 <fullyQualifiedTypeName name="java.util.concurrent.ArrayBlockingQueue"/>
-<fullyQualifiedTypeName name="javax.swing.JFrame"/>
 <fullyQualifiedTypeName name="java.awt.event.WindowEvent"/>
 <fullyQualifiedTypeName name="java.awt.event.WindowAdapter"/>
 <fullyQualifiedTypeName name="observador.Pantalla"/>
 <fullyQualifiedTypeName name="GUI.GUI"/>
-<fullyQualifiedTypeName name="java.awt.Dimension"/>
 <fullyQualifiedTypeName name="observador.PrevisionTiempo"/>
 <fullyQualifiedTypeName name="elementos.Tarjeta"/>
 <fullyQualifiedTypeName name="elementos.Bus"/>
@@ -27,7 +25,6 @@
 <fullyQualifiedTypeName name="observador.TiempoSateital"/>
 <fullyQualifiedTypeName name="observador.GraficaTemperatura"/>
 <fullyQualifiedTypeName name="observable.Temperatura"/>
-<fullyQualifiedTypeName name="java.util.ArrayList"/>
 <fullyQualifiedTypeName name="elementos.TipoClientes"/>
 <fullyQualifiedTypeName name="java.util.Random"/>
 <fullyQualifiedTypeName name="visitantes.VisitanteEquipo"/>
@@ -36,4 +33,22 @@
 <fullyQualifiedTypeName name="elementos.Equipo"/>
 <fullyQualifiedTypeName name="visitantes.VisitantePrecio"/>
 <fullyQualifiedTypeName name="java.text.DecimalFormat"/>
+<fullyQualifiedTypeName name="javax.swing.JPanel"/>
+<fullyQualifiedTypeName name="javax.swing.JFrame"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="scacv.CadenaFiltros"/>
+<fullyQualifiedTypeName name="scacv.CalcularDistancia"/>
+<fullyQualifiedTypeName name="scacv.CalcularVelocidad"/>
+<fullyQualifiedTypeName name="gui.GUI"/>
+<fullyQualifiedTypeName name="scacv.GestorFiltros"/>
+<fullyQualifiedTypeName name="scacv.Cliente"/>
+<fullyQualifiedTypeName name="gui.PanelBotones"/>
+<fullyQualifiedTypeName name="javax.swing.JButton"/>
+<fullyQualifiedTypeName name="javax.swing.JLabel"/>
+<fullyQualifiedTypeName name="java.awt.Color"/>
+<fullyQualifiedTypeName name="javax.swing.JToggleButton"/>
+<fullyQualifiedTypeName name="javax.swing.BoxLayout"/>
+<fullyQualifiedTypeName name="java.awt.Panel"/>
+<fullyQualifiedTypeName name="java.awt.FlowLayout"/>
+<fullyQualifiedTypeName name="java.awt.Dimension"/>
 </qualifiedTypeNameHistroy>

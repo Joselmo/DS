@@ -1,8 +1,4 @@
-###############
-##  LaTEX
-###############
 
-## Core latex/pdflatex auxiliary files:
 *.aux
 *.lof
 *.log
@@ -16,7 +12,6 @@
 *.cb2
 *.bak
 
-## Build tool auxiliary files:
 *.fdb_latexmk
 *.synctex
 *.synctex(busy)
@@ -24,13 +19,10 @@
 *.synctex.gz(busy)
 *.pdfsync
 
-######################
-# Eclipse
-######################
  
 *.pydevproject
 .project
-.metadata
+.metadata/*
 Prácticas/Práctica_1/.metadata/*
 bin/**
 tmp/**
@@ -39,6 +31,7 @@ tmp/**/*
 *.bak
 *.swp
 *~.nib
+.history/*
 local.properties
 .classpath
 .settings/
@@ -47,5 +40,6 @@ local.properties
 # External tool builders
 .externalToolBuilders/
 
+.plugins/*
 
 

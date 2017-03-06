@@ -1,5 +1,0 @@
-package Bicicleta;
-
-public class RuedaMontaña extends Rueda {
-
-}
