@@ -18,4 +18,22 @@
 			<item value="org.eclipse.jdt.ui.java"/>
 		</list>
 	</section>
+	<section name="ImportExportAction">
+		<item value="org.eclipse.ui.wizards.export.ZipFile" key="ImportExportPage.STORE_SELECTED_EXPORT_WIZARD_ID"/>
+		<list key="ImportExportPage.STORE_EXPANDED_EXPORT_CATEGORIES">
+			<item value="org.eclipse.ui.Basic"/>
+			<item value="org.eclipse.jdt.ui.Java"/>
+		</list>
+	</section>
+	<section name="ZipFileExportWizard">
+		<item value="true" key="WizardZipFileResourceExportPage1.STORE_COMPRESS_CONTENTS_ID"/>
+		<item value="true" key="WizardZipFileResourceExportPage1.STORE_CREATE_STRUCTURE_ID"/>
+		<list key="WizardZipFileResourceExportPage1.STORE_DESTINATION_NAMES_ID">
+			<item value="C:\Users\Jose-laptop\Documents\GitHub\DS\Prácticas\MartinezOrtizJoseLuis-2.zip"/>
+			<item value="C:\Users\Jose-laptop\Documents\GitHub\DS\Prácticas\MartinezOrtizJoseLuis-4.zip"/>
+			<item value="C:\Users\Jose-laptop\Documents\GitHub\DS\Prácticas\MartinezOrtizJoseLuis-3.zip"/>
+			<item value="C:\Users\Jose-laptop\Documents\GitHub\DS\Prácticas\MartinezOrtizJoseLuis.zip"/>
+			<item value="MartinezOrtizJoseLuis.zip"/>
+		</list>
+	</section>
 </section>

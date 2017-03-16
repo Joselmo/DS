@@ -31,7 +31,6 @@ public abstract class Equipo {
 	  }
 
 	  public String nombre(){
-
 	    return nombre;
 
 	  }

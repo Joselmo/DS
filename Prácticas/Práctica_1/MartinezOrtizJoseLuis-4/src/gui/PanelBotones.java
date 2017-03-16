@@ -3,6 +3,8 @@ package gui;
 import java.awt.Color;
 import java.awt.FlowLayout;
 import java.awt.Panel;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 import javax.swing.BoxLayout;
 import javax.swing.JButton;
@@ -45,6 +47,27 @@ public class PanelBotones extends JPanel{
 		
 		this.add(EtiqMostrarEstado);
 		
+		
+		BotonEncender.addActionListener(new ActionListener() {
+			
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				BotonEncenderActionPerformed(e);
+				
+			}
+		});
+		
+		BotonAcelerar.addActionListener(new ActionListener() {
+			
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				BotonAcelerarActionPerformed(e);
+				
+			}
+		});
+		
+		
+		
 		panel_inferior.add(BotonEncender);
 		panel_inferior.add(BotonAcelerar);
 		
@@ -56,16 +79,18 @@ public class PanelBotones extends JPanel{
 	synchronized private void
 	BotonAcelerarActionPerformed(java.awt.event.ActionEvent evt){
 		if(BotonEncender.isSelected()){ // Si está encendido
+			System.out.println("Acelerando");	
 				
-				
+		}else{
+			System.out.println("El motor está apagado, no se puede acelerar");
 		}
 		
 		
 	};
 	
 	
-	synchronized private void
-	BotonEncenderActionPerformed(java.awt.event.ActionEvent evt){
+	synchronized private void BotonEncenderActionPerformed(java.awt.event.ActionEvent evt){
+		System.out.println("Boton con estado"+BotonEncender.isSelected());
 		if(BotonEncender.isSelected()){ // Si está encendido
 			
 			// Estado del boton

@@ -15,7 +15,12 @@ public class CadenaFiltros {
 	}
 	
 	public void ejecutar(double p){
-		
+		double resultado=0;
+		interfaz.ejecutar(p);
+		for(Filtro item: filtros){
+			resultado = item.ejecutar(p);
+			System.out.println("Filtro"+item.getTipo()+" actualizado "+resultado);
+		}
 	}
 	
 	public void setObjetivo(GUI objetivo){

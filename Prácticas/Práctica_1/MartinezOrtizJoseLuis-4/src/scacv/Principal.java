@@ -12,12 +12,17 @@ public class Principal {
 		CalcularDistancia calcularDistancia;
 		CalcularVelocidad calcularVelocidad;
 		
-		Filtro fVelocidad = new CalcularVelocidad();
+		Filtro fVelocidad = new CalcularVelocidad(30);
 		Filtro fDistancia = new CalcularDistancia();
+		
+		((CalcularVelocidad)fVelocidad).setIntervalo(1000);
 		
 		Cliente cliente = new Cliente();
 		
 		GestorFiltros gestor = new GestorFiltros(interfaz);
+		
+		gestor.setFiltro(fDistancia);
+		gestor.setFiltro(fVelocidad);
 		
 		cliente.setGestorFiltros(gestor);
 		
