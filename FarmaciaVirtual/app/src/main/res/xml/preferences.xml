@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <EditTextPreference
+            android:defaultValue="Jose"
+            android:key="prf_user_name"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:title="Nombre de usuario" />
+
+        <EditTextPreference
+            android:key="prf_user_pass"
+            android:title="Contraseña"
+            android:inputType="textPassword"/>
+
+</PreferenceScreen>

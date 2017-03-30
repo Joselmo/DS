@@ -1,0 +1,17 @@
+Primero nos vemos un mapa de Google maps con las farmacias cercanas,
+pero solo a nivel informativo, para interactuar es necesaria una sesión.
+
+Cesta: el caso de uso "cesta" hay tiene que tener la lista de los productos que voy a compra
+para comprar es necesaria un boton de confirmación, que lanza el pedido al servidor.
+	Este caso de uso tiene que tener una extensión de metodos de pagos, para que el usuario seleccione 
+	un tipo de pago. Si se paga en ese momento se emitira un recibo. 
+
+Las busquedas que sean lo más amplio posible y facil para la app web.
+
+Configurar perfil de usuario: Contiene la información de cliente, dirección, CC, etc
+
+problemas tecnicos:
+	cargar un mapa de Google Maps.
+	Crear la geolocalización
+	Etiquetar el mapa
+
