@@ -1,4 +1,4 @@
-package com.example.jose_laptop.farmaciavirtual;
+package com.example.jose_laptop.farmaciavirtual.Vista;
 
 
 import android.os.Bundle;
@@ -7,6 +7,8 @@ import android.support.v7.widget.Toolbar;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.LinearLayout;
+
+import com.example.jose_laptop.farmaciavirtual.R;
 
 /**
  * Created by Jose-laptop on 26/03/2017.

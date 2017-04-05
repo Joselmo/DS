@@ -1,11 +1,9 @@
-package com.example.jose_laptop.farmaciavirtual;
+package com.example.jose_laptop.farmaciavirtual.Controlador;
 
 import java.io.UnsupportedEncodingException;
-import java.security.InvalidAlgorithmParameterException;
 import java.security.InvalidKeyException;
 import java.security.NoSuchAlgorithmException;
 import java.security.spec.InvalidKeySpecException;
-import java.security.spec.InvalidParameterSpecException;
 
 import javax.crypto.BadPaddingException;
 import javax.crypto.Cipher;
@@ -48,7 +46,7 @@ public class Encriptador {
 
     }
 
-    static Encriptador getInstance() {
+    public static Encriptador getInstance() {
         return ourInstance;
     }
 

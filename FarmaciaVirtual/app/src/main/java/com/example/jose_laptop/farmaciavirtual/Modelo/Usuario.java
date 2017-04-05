@@ -1,4 +1,8 @@
-package com.example.jose_laptop.farmaciavirtual;
+package com.example.jose_laptop.farmaciavirtual.Modelo;
+
+import com.example.jose_laptop.farmaciavirtual.Controlador.Encriptador;
+
+import java.util.Arrays;
 
 import javax.crypto.BadPaddingException;
 import javax.crypto.IllegalBlockSizeException;
@@ -7,16 +11,16 @@ import javax.crypto.IllegalBlockSizeException;
  * Created by Jose-laptop on 28/03/2017.
  */
 
-class Usuario {
+public class Usuario {
     private static final Usuario ourInstance = new Usuario();
 
     static Usuario getInstance() {
         return ourInstance;
     }
 
-    private String usuario;
+    private String  usuario;
     private byte [] password;
-    private int id;
+    private int     id;
 
     private Usuario() {
     }
@@ -25,6 +29,11 @@ class Usuario {
         return usuario;
     }
 
+    public int getID(){ return id;}
+
+    public String getPass(){
+        return Arrays.toString(password);
+    }
 
     public void setPassword(String pass){
         password = Encriptador.getInstance().encryptMsg(pass);

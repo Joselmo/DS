@@ -1,4 +1,4 @@
-package com.example.jose_laptop.farmaciavirtual;
+package com.example.jose_laptop.farmaciavirtual.Vista;
 
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -13,6 +13,8 @@ import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
+
+import com.example.jose_laptop.farmaciavirtual.R;
 
 public class Principal extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {

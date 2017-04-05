@@ -1,4 +1,4 @@
-package com.example.jose_laptop.farmaciavirtual;
+package com.example.jose_laptop.farmaciavirtual.Vista;
 
 import android.content.SharedPreferences;
 import android.os.Bundle;
@@ -7,6 +7,8 @@ import android.os.Parcelable;
 import android.preference.Preference;
 import android.preference.PreferenceFragment;
 import android.preference.PreferenceManager;
+
+import com.example.jose_laptop.farmaciavirtual.R;
 
 /**
  * Created by Jose-laptop on 26/03/2017.
